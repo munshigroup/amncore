@@ -70,7 +70,7 @@ class RingBuffer(object):
             self.monitor = self.monitor_thread()
         
     def stop_monitor(self):
-        if self.monitor is None:
+        if self.monitor is not None:
             self.monitor.kill()
             
         self.monitor = None
