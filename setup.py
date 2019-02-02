@@ -5,7 +5,7 @@ with open("README.md", "r") as fd:
 
 setuptools.setup(
     name="amncore",
-    version="0.1.1",
+    version="0.1.2",
     author="The Munshi Group",
     author_email="support@munshigroup.com",
     description="AmmuNation Framework core modules",
