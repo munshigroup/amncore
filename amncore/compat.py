@@ -271,7 +271,7 @@ def win32_winexec(cmd):
     return exe(cmd, 0)
 
 def pipe():
-    if (is_windows == False):
+    if (is_windows() == False):
         rd, wr = os.pipe()
         pipe1 = os.fdopen(rd, 'rb')
         pipe2 = os.fdopen(wr, 'wb')
