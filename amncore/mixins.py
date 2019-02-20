@@ -11,10 +11,7 @@ import threading
 import time
 import xcepts
 
-LogSource = "amn_mixins"
-
-if logger.is_log_source_registered(LogSource) == False:
-    logger.register_log_source(LogSource, logger.FlatFileSink("amn_mixins.log"), logger.LEV_1)
+LogSource = "amncore"
 
 class StreamMixin(object):
     def __init__(self, *args, **kwargs):
