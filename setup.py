@@ -15,7 +15,7 @@ if re.search(r'win(32|64)', sys.platform) is not None:
     
 setuptools.setup(
     name="amncore",
-    version="0.1.3",
+    version="0.1.4",
     author="The Munshi Group",
     author_email="support@munshigroup.com",
     description="AmmuNation Framework core modules",
