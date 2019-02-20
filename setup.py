@@ -15,7 +15,7 @@ if re.search(r'win(32|64)', sys.platform) is not None:
     
 setuptools.setup(
     name="amncore",
-    version="0.1.4",
+    version="0.2",
     author="The Munshi Group",
     author_email="support@munshigroup.com",
     description="AmmuNation Framework core modules",
@@ -25,6 +25,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires = prereqs,
     classifiers=[
+        "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
