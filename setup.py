@@ -8,7 +8,10 @@ with open("README.md", "r") as fd:
 prereqs = ['bombfuse', 'kthread']
 
 if re.search(r'win(32|64)', sys.platform) is not None:
-    prereqs.append('pypiwin32')
+    try:
+        import win32api
+    except ImportError:
+        prereqs.append('pypiwin32')
     
 setuptools.setup(
     name="amncore",
