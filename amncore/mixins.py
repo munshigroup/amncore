@@ -238,8 +238,7 @@ class StreamServerMixin(object):
         self.on_client_close_proc = None
         self.on_client_connect_proc = None
         self.on_client_data_proc = None
-        return self
-
+        
     def on_client_connect(self, client):
         """
         Callback method for handling incoming client connections
